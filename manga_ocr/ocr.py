@@ -12,7 +12,7 @@ class MangaOcrModel(VisionEncoderDecoderModel, GenerationMixin):
     pass
 
 class MangaOcr:
-    def __init__(self, pretrained_model_name_or_path="kha-white/manga-ocr-base", force_cpu=False):
+    def __init__(self, pretrained_model_name_or_path="riqalter/manga-ocr-deit-tiny", force_cpu=False):
         logger.info(f"Loading OCR model from {pretrained_model_name_or_path}")
         self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
         self.tokenizer = AutoTokenizer.from_pretrained(pretrained_model_name_or_path)

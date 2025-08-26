@@ -47,7 +47,7 @@ def get_path_key(path):
 def run(
     read_from="clipboard",
     write_to="clipboard",
-    pretrained_model_name_or_path="kha-white/manga-ocr-base",
+    pretrained_model_name_or_path="riqalter/manga-ocr-deit-tiny",
     force_cpu=False,
     delay_secs=0.1,
     verbose=False,
